@@ -1,0 +1,106 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "DataModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DataModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DataModel.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DataModel/1.0.0": {
+      "type": "project",
+      "path": "../DataModel/DataModel.csproj",
+      "msbuildProject": "../DataModel/DataModel.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel..\\DataModel\\DataModel.csprojDataModel.csproj",
+      "DataModel >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ngocanh\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+      "projectName": "BusinessLogicLayer",
+      "projectPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+      "packagesPath": "C:\\Users\\ngocanh\\.nuget\\packages\\",
+      "outputPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\BusinessLogicLayer\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\ngocanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel..\\DataModel\\DataModel.csprojDataModel.csproj": {
+              "projectPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel..\\DataModel\\DataModel.csprojDataModel.csproj"
+            },
+            "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel\\DataModel.csproj": {
+              "projectPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel\\DataModel.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel..\\DataModel\\DataModel.csprojDataModel.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel..\\DataModel\\DataModel.csprojDataModel.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
