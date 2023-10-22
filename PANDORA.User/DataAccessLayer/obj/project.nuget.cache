@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "O5Jj/17wwOxCXHtMgaX33gZ0Wwpw5HywJx6Nxoxb/5GC4ielqBwBpGtyWo2qodnZfpaDKXwh+Gv+BwHo5kIr5A==",
+  "dgSpecHash": "j77gOmIEY56oyU2+mUV17gEWbcbQpz/JKNGR6vQE1UPcFNtPV7qAiZdcbP7ynIKDw58csgQaleb0meCKP9MQfg==",
   "success": true,
-  "projectFilePath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ngocanh\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\ngocanh\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\ngocanh\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
+    "C:\\Users\\ngocanh\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ngocanh\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\ngocanh\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ngocanh\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\ngocanh\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",

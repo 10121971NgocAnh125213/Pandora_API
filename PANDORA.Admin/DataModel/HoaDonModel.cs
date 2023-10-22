@@ -10,9 +10,10 @@ namespace DataModel
     {
         public int MaHoaDon { get; set; }
         public string TenKhachHang { get; set; }
+        public string Sđt { get; set; }
         public string DiaChiGiaoHang { get; set; }
         public bool TrangThai { get; set; }
-        public double TongTien { get; set; } 
+        public DateTime NgayTao { get; set; }
         public List<ChiTietHoaDonModel> list_json_chitiethoadon { get; set; }
     }
     public class ChiTietHoaDonModel
@@ -21,7 +22,7 @@ namespace DataModel
         public int MaHoaDon { get; set; }        
         public int MaSanPham { get; set; }
         public int SoLuong { get; set; }
-        public double TongTien { get; set; }
+        public decimal TongTien { get; set; }
 
 
     }

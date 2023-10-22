@@ -14,12 +14,16 @@ namespace DataAccessLayer
             string msgError = "";
             try
             {
+                var xxx = model.list_json_chitiethoadon != null ? MessageConvert.SerializeObject(model.list_json_chitiethoadon) : null;
                 var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "sp_hoadon_create",
-                "@TenKhachHang", model.TenKhachHang,
-                "@DiaChiGiaoHang", model.DiaChiGiaoHang,
-                "@TrangThai", model.TrangThai);
-                //"@list_json_chitiethoadon", model.list_json_chitiethoadon != null ? MessageConvert.SerializeObject(model.list_json_chitiethoadon) : null);
+                "@TenKH", model.TenKhachHang,
+                "@Sđt", model.Sđt,
+                "@Diachi", model.DiaChiGiaoHang,
+                "@TrangThai", model.TrangThai,
+                "@NgayTao", model.NgayTao,
+                "@list_json_chitiethoadon", model.list_json_chitiethoadon != null ? MessageConvert.SerializeObject(model.list_json_chitiethoadon) : null);
                 if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))
+                    if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))
                 {
                     throw new Exception(Convert.ToString(result) + msgError);
                 }
