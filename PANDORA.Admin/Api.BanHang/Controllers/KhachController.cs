@@ -34,7 +34,7 @@ namespace Api.BanHang.Controllers
 
 
         [Route("update-khach")]
-        [HttpPost]
+        [HttpPut]
         public KhachModel UpdateItem([FromBody] KhachModel model)
         {
             _khachBusiness.Update(model);
@@ -45,12 +45,11 @@ namespace Api.BanHang.Controllers
 
         [Route("Delete-Khach")]
         [HttpDelete]
-        public KhachModel DeleteItem([FromBody] KhachModel model)
+        public IActionResult DeleteItem(string MaKhachHang)
         {
-            _khachBusiness.Delete(model);
-            return model;
+            _khachBusiness.Delete(MaKhachHang);
+            return Ok(new {message ="Xóa thành công!"});
         }
-
 
 
         [Route("Search-Khach")]

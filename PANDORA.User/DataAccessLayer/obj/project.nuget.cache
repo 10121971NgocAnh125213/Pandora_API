@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j77gOmIEY56oyU2+mUV17gEWbcbQpz/JKNGR6vQE1UPcFNtPV7qAiZdcbP7ynIKDw58csgQaleb0meCKP9MQfg==",
+  "dgSpecHash": "fy6YMzbCeiT3DFOA1HTB757rIXNzOQ9hwQmicLnjK3D5mzYR4DWpbDg4g7cHe8Ji/nu1rm3/hr1+A8kS5tlxog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataAccessLayer\\DataAccessLayer.csproj",
+  "projectFilePath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataAccessLayer\\DataAccessLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ngocanh\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\ngocanh\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

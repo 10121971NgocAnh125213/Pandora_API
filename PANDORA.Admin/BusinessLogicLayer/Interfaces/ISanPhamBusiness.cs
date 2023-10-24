@@ -13,5 +13,6 @@ namespace BusinessLogicLayer
         bool Create (SanPhamModel model);    
         bool Update (SanPhamModel model);
         bool Delete (SanPhamModel model);
+        public List<SanPhamModel> Search(int pageIndex, int pageSize, out long total, string TenSanPham, string Gia);
     }
 }

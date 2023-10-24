@@ -22,3 +22,72 @@ D:\Teaching\Demo\WebAPI\BanHang\DataModel\obj\Debug\net6.0\DataModel.dll
 D:\Teaching\Demo\WebAPI\BanHang\DataModel\obj\Debug\net6.0\refint\DataModel.dll
 D:\Teaching\Demo\WebAPI\BanHang\DataModel\obj\Debug\net6.0\DataModel.pdb
 D:\Teaching\Demo\WebAPI\BanHang\DataModel\obj\Debug\net6.0\ref\DataModel.dll
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\Bán hàng\DataModel\bin\Debug\net6.0\DataModel.deps.json
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\Bán hàng\DataModel\bin\Debug\net6.0\DataModel.dll
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\Bán hàng\DataModel\bin\Debug\net6.0\DataModel.pdb
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\Bán hàng\DataModel\obj\Debug\net6.0\DataModel.csproj.AssemblyReference.cache
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\Bán hàng\DataModel\obj\Debug\net6.0\DataModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\Bán hàng\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfoInputs.cache
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\Bán hàng\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfo.cs
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\Bán hàng\DataModel\obj\Debug\net6.0\DataModel.csproj.CoreCompileInputs.cache
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\Bán hàng\DataModel\obj\Debug\net6.0\DataModel.dll
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\Bán hàng\DataModel\obj\Debug\net6.0\refint\DataModel.dll
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\Bán hàng\DataModel\obj\Debug\net6.0\DataModel.pdb
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\Bán hàng\DataModel\obj\Debug\net6.0\ref\DataModel.dll
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\WebAPIQuanAo\DataModel\bin\Debug\net6.0\DataModel.deps.json
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\WebAPIQuanAo\DataModel\bin\Debug\net6.0\DataModel.dll
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\WebAPIQuanAo\DataModel\bin\Debug\net6.0\DataModel.pdb
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.csproj.AssemblyReference.cache
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfoInputs.cache
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfo.cs
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.csproj.CoreCompileInputs.cache
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.dll
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\WebAPIQuanAo\DataModel\obj\Debug\net6.0\refint\DataModel.dll
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.pdb
+D:\Bài Tập\Kì 1 - Năm 3\Phát triển phần mềm hướng dvu\WebAPIQuanAo\DataModel\obj\Debug\net6.0\ref\DataModel.dll
+D:\Bài Tập\Kì 1 - Năm 3\BTL HDV\WebAPIQuanAo\DataModel\bin\Debug\net6.0\DataModel.deps.json
+D:\Bài Tập\Kì 1 - Năm 3\BTL HDV\WebAPIQuanAo\DataModel\bin\Debug\net6.0\DataModel.dll
+D:\Bài Tập\Kì 1 - Năm 3\BTL HDV\WebAPIQuanAo\DataModel\bin\Debug\net6.0\DataModel.pdb
+D:\Bài Tập\Kì 1 - Năm 3\BTL HDV\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.csproj.AssemblyReference.cache
+D:\Bài Tập\Kì 1 - Năm 3\BTL HDV\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bài Tập\Kì 1 - Năm 3\BTL HDV\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfoInputs.cache
+D:\Bài Tập\Kì 1 - Năm 3\BTL HDV\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfo.cs
+D:\Bài Tập\Kì 1 - Năm 3\BTL HDV\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.csproj.CoreCompileInputs.cache
+D:\Bài Tập\Kì 1 - Năm 3\BTL HDV\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.dll
+D:\Bài Tập\Kì 1 - Năm 3\BTL HDV\WebAPIQuanAo\DataModel\obj\Debug\net6.0\refint\DataModel.dll
+D:\Bài Tập\Kì 1 - Năm 3\BTL HDV\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.pdb
+D:\Bài Tập\Kì 1 - Năm 3\BTL HDV\WebAPIQuanAo\DataModel\obj\Debug\net6.0\ref\DataModel.dll
+D:\BTL_Hướng Dịch Vụ\WebAPIQuanAo\WebAPIQuanAo\DataModel\bin\Debug\net6.0\DataModel.deps.json
+D:\BTL_Hướng Dịch Vụ\WebAPIQuanAo\WebAPIQuanAo\DataModel\bin\Debug\net6.0\DataModel.dll
+D:\BTL_Hướng Dịch Vụ\WebAPIQuanAo\WebAPIQuanAo\DataModel\bin\Debug\net6.0\DataModel.pdb
+D:\BTL_Hướng Dịch Vụ\WebAPIQuanAo\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\BTL_Hướng Dịch Vụ\WebAPIQuanAo\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfoInputs.cache
+D:\BTL_Hướng Dịch Vụ\WebAPIQuanAo\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfo.cs
+D:\BTL_Hướng Dịch Vụ\WebAPIQuanAo\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.csproj.CoreCompileInputs.cache
+D:\BTL_Hướng Dịch Vụ\WebAPIQuanAo\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.dll
+D:\BTL_Hướng Dịch Vụ\WebAPIQuanAo\WebAPIQuanAo\DataModel\obj\Debug\net6.0\refint\DataModel.dll
+D:\BTL_Hướng Dịch Vụ\WebAPIQuanAo\WebAPIQuanAo\DataModel\obj\Debug\net6.0\DataModel.pdb
+D:\BTL_Hướng Dịch Vụ\WebAPIQuanAo\WebAPIQuanAo\DataModel\obj\Debug\net6.0\ref\DataModel.dll
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.Admin\DataModel\bin\Debug\net6.0\DataModel.deps.json
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.Admin\DataModel\bin\Debug\net6.0\DataModel.dll
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.Admin\DataModel\bin\Debug\net6.0\DataModel.pdb
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.Admin\DataModel\obj\Debug\net6.0\DataModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.Admin\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfoInputs.cache
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.Admin\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfo.cs
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.Admin\DataModel\obj\Debug\net6.0\DataModel.csproj.CoreCompileInputs.cache
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.Admin\DataModel\obj\Debug\net6.0\DataModel.dll
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.Admin\DataModel\obj\Debug\net6.0\refint\DataModel.dll
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.Admin\DataModel\obj\Debug\net6.0\DataModel.pdb
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.Admin\DataModel\obj\Debug\net6.0\ref\DataModel.dll
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.User\DataModel\bin\Debug\net6.0\DataModel.deps.json
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.User\DataModel\bin\Debug\net6.0\DataModel.dll
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.User\DataModel\bin\Debug\net6.0\DataModel.pdb
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.User\DataModel\obj\Debug\net6.0\DataModel.GeneratedMSBuildEditorConfig.editorconfig
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.User\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfoInputs.cache
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.User\DataModel\obj\Debug\net6.0\DataModel.AssemblyInfo.cs
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.User\DataModel\obj\Debug\net6.0\DataModel.csproj.CoreCompileInputs.cache
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.User\DataModel\obj\Debug\net6.0\DataModel.dll
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.User\DataModel\obj\Debug\net6.0\refint\DataModel.dll
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.User\DataModel\obj\Debug\net6.0\DataModel.pdb
+D:\BTL_Hướng Dịch Vụ\PANDORA_API\PANDORA.User\DataModel\obj\Debug\net6.0\ref\DataModel.dll

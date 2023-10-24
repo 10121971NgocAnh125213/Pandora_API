@@ -9,13 +9,13 @@ namespace DataAccessLayer
         {
             _dbHelper = dbHelper;
         }
-        public KhachModel GetDatabyID(string id)
+        public KhachModel GetDatabyID(string MaKhachHang)
         {
             string msgError = "";
             try
             {
                 var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_khach_get_by_id",
-                     "@id", id);
+                     "@MaKhachHang", MaKhachHang);
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);
                 return dt.ConvertTo<KhachModel>().FirstOrDefault();
@@ -30,12 +30,14 @@ namespace DataAccessLayer
             string msgError = "";
             try
             {
-                var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "sp_khach_create",
-                "@TenKH", model.TenKH,
-                "@GioiTinh", model.GioiTinh,
-                "@DiaChi", model.DiaChi,
-                "@SDT", model.SDT,
-                "@Email", model.Email);
+                var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(
+                   out msgError,
+                   "sp_khach_create",
+               "@TenKhachHang", model.TenKhachHang,
+               "@GioiTinh", model.GioiTinh,
+               "@Sđt", model.Sđt,
+               "@DiaChi", model.DiaChi,
+               "@Email", model.Email);
                 if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))
                 {
                     throw new Exception(Convert.ToString(result) + msgError);
@@ -52,13 +54,15 @@ namespace DataAccessLayer
             string msgError = "";
             try
             {
-                var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "sp_khach_update",
-                "@Id", model.Id,
-                "@TenKH", model.TenKH,
-                "@GioiTinh", model.GioiTinh,
-                "@DiaChi", model.DiaChi,
-                "@SDT", model.SDT,
-                "@Email", model.Email);
+                var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(
+                    out msgError,
+                    "sp_khach_update",
+                "@makhachhang" ,model.MaKhachHang,
+                "@tenKhachHang", model.TenKhachHang,
+                "@gioiTinh", model.GioiTinh,
+                "@sđt", model.Sđt,
+                "@diaChi", model.DiaChi,
+                "@email", model.Email);
                 if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))
                 {
                     throw new Exception(Convert.ToString(result) + msgError);
@@ -70,8 +74,26 @@ namespace DataAccessLayer
                 throw ex;
             }
         }
-
-        public List<KhachModel> Search(int pageIndex, int pageSize, out long total, string ten_khach, string dia_chi)
+        public bool Delete(KhachModel model)
+        {
+            string msgError = "";
+            try
+            {
+                var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "sp_khach_delete",
+                "@MaKhachHang", model.MaKhachHang);
+                ;
+                if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))
+                {
+                    throw new Exception(Convert.ToString(result) + msgError);
+                }
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<KhachModel> Search(int pageIndex, int pageSize, out long total, string TenKhachHang, string DiaChi)
         {
             string msgError = "";
             total = 0;
@@ -80,8 +102,8 @@ namespace DataAccessLayer
                 var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_khach_search",
                     "@page_index", pageIndex,
                     "@page_size", pageSize,
-                    "@ten_khach", ten_khach,
-                    "@dia_chi", dia_chi);
+                    "@ten_khach", TenKhachHang,
+                    "@dia_chi", DiaChi);
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);
                 if (dt.Rows.Count > 0) total = (long)dt.Rows[0]["RecordCount"];

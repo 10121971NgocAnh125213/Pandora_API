@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ngocanh\\Downloads\\BanHang\\Api.BanHang\\Api.BanHang.csproj": {}
+    "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\Api.BanHang\\Api.BanHang.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ngocanh\\Downloads\\BanHang\\Api.BanHang\\Api.BanHang.csproj": {
+    "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\Api.BanHang\\Api.BanHang.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ngocanh\\Downloads\\BanHang\\Api.BanHang\\Api.BanHang.csproj",
+        "projectUniqueName": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\Api.BanHang\\Api.BanHang.csproj",
         "projectName": "Api.BanHang",
-        "projectPath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\Api.BanHang\\Api.BanHang.csproj",
+        "projectPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\Api.BanHang\\Api.BanHang.csproj",
         "packagesPath": "C:\\Users\\ngocanh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\Api.BanHang\\obj\\",
+        "outputPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\Api.BanHang\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ngocanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ngocanh\\Downloads\\BanHang\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {
-                "projectPath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\BusinessLogicLayer\\BusinessLogicLayer.csproj"
+              "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {
+                "projectPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\BusinessLogicLayer\\BusinessLogicLayer.csproj"
               },
-              "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataModel\\DataModel.csproj": {
-                "projectPath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataModel\\DataModel.csproj"
+              "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel\\DataModel.csproj": {
+                "projectPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel\\DataModel.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\ngocanh\\Downloads\\BanHang\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {
+    "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\BusinessLogicLayer\\BusinessLogicLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ngocanh\\Downloads\\BanHang\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+        "projectUniqueName": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
         "projectName": "BusinessLogicLayer",
-        "projectPath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
+        "projectPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\BusinessLogicLayer\\BusinessLogicLayer.csproj",
         "packagesPath": "C:\\Users\\ngocanh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\BusinessLogicLayer\\obj\\",
+        "outputPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\BusinessLogicLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ngocanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -103,11 +103,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataAccessLayer\\DataAccessLayer.csproj": {
-                "projectPath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataAccessLayer\\DataAccessLayer.csproj"
+              "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataAccessLayer\\DataAccessLayer.csproj"
               },
-              "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataModel\\DataModel.csproj": {
-                "projectPath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataModel\\DataModel.csproj"
+              "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel\\DataModel.csproj": {
+                "projectPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel\\DataModel.csproj"
               }
             }
           }
@@ -124,7 +124,7 @@
           "dependencies": {
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[6.32.3, )"
+              "version": "[6.10.0, )"
             }
           },
           "imports": [
@@ -147,14 +147,14 @@
         }
       }
     },
-    "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataAccessLayer\\DataAccessLayer.csproj": {
+    "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataAccessLayer\\DataAccessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectUniqueName": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataAccessLayer\\DataAccessLayer.csproj",
         "projectName": "DataAccessLayer",
-        "projectPath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataAccessLayer\\DataAccessLayer.csproj",
         "packagesPath": "C:\\Users\\ngocanh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataAccessLayer\\obj\\",
+        "outputPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataAccessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ngocanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -171,8 +171,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataModel\\DataModel.csproj": {
-                "projectPath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataModel\\DataModel.csproj"
+              "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel\\DataModel.csproj": {
+                "projectPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel\\DataModel.csproj"
               }
             }
           }
@@ -220,14 +220,14 @@
         }
       }
     },
-    "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataModel\\DataModel.csproj": {
+    "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel\\DataModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataModel\\DataModel.csproj",
+        "projectUniqueName": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel\\DataModel.csproj",
         "projectName": "DataModel",
-        "projectPath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataModel\\DataModel.csproj",
+        "projectPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel\\DataModel.csproj",
         "packagesPath": "C:\\Users\\ngocanh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ngocanh\\Downloads\\BanHang\\DataModel\\obj\\",
+        "outputPath": "D:\\BTL_Hướng Dịch Vụ\\PANDORA_API\\PANDORA.User\\DataModel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ngocanh\\AppData\\Roaming\\NuGet\\NuGet.Config",

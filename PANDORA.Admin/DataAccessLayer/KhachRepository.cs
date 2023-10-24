@@ -74,13 +74,13 @@ namespace DataAccessLayer
                 throw ex;
             }
         }
-        public bool Delete(KhachModel model)
+        public bool Delete(string MaKhachHang)
         {
             string msgError = "";
             try
             {
                 var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "sp_khach_delete",
-                "@MaKhachHang", model.MaKhachHang);
+                "@MaKhachHang", MaKhachHang);
                 ;
                 if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))
                 {
@@ -93,7 +93,6 @@ namespace DataAccessLayer
                 throw ex;
             }
         }
-
         public List<KhachModel> Search(int pageIndex, int pageSize, out long total, string TenKhachHang, string DiaChi)
         {
             string msgError = "";
@@ -103,7 +102,7 @@ namespace DataAccessLayer
                 var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_khach_search",
                     "@page_index", pageIndex,
                     "@page_size", pageSize,
-                    "@ten_khach", DiaChi,
+                    "@ten_khach", TenKhachHang,
                     "@dia_chi", DiaChi);
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);
