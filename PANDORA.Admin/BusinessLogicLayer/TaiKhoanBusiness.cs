@@ -1,45 +1,31 @@
 ﻿using BusinessLogicLayer;
-using BusinessLogicLayer.Interfaces;
 using DataAccessLayer;
 using DataModel;
-using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Net.Sockets;
-using System.Security.Claims;
-using System.Text;
 
 namespace BusinessLogicLayer
 {
-    public class TaiKhoanBusiness:ITaiKhoanBusiness
+    public class TaiKhoanBusiness : ITaiKhoanBusiness
     {
-        private ITaiKhoanBusiness _res;
-        private string secret;
-        public TaiKhoanBusiness(ITaiKhoanRepository res, IConfiguration configuration)
+        private ITaiKhoanRepository _res;
+        public TaiKhoanBusiness(ITaiKhoanRepository res)
         {
-            _res = (ITaiKhoanBusiness?)res;
-            secret = configuration["AppSettings:Secret"];
+            _res = res;
         }
-
-        public TaiKhoanModel Login(string taikhoan, string matkhau)
+        public TaiKhoanModel GetDatabyID(string id)
         {
-            var user = _res.Login(taikhoan, matkhau);
-            if (user == null)
-                return null;
-            var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes(secret);
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(new Claim[]
-                {
-                    new Claim(ClaimTypes.Name, user.TenTaiKhoan.ToString())
-                }),
-                Expires = DateTime.UtcNow.AddDays(7),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.Aes128CbcHmacSha256)
-            };
-            var token = tokenHandler.CreateToken(tokenDescriptor);
-            user.token = tokenHandler.WriteToken(token);
-            return user;
+            return _res.GetDatabyID(id);
+        }
+        public bool Create(TaiKhoanModel model)
+        {
+            return _res.Create(model);
+        }
+        public bool Update(TaiKhoanModel model)
+        {
+            return _res.Update(model);
+        }
+        public bool Delete(string MaTaiKhoan)
+        {
+            return _res.Delete(MaTaiKhoan);
         }
     }
 }

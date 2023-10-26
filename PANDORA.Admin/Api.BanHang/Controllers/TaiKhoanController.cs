@@ -11,19 +11,40 @@ namespace Api.BanHang.Controllers
     public class TaiKhoanController : ControllerBase
     {
         private ITaiKhoanBusiness _taiKhoanBusiness;
-        public TaiKhoanController( ITaiKhoanBusiness taiKhoanBusiness)
-        {
+        public TaiKhoanController(ITaiKhoanBusiness taiKhoanBusiness)
+        {  
             _taiKhoanBusiness = taiKhoanBusiness;
         }
-        [AllowAnonymous]
-        [HttpPost("login")]
-        public IActionResult Login([FromBody] AuthenticateModel model)
+
+        [Route("get-by-id/{MaTaiKhoan}")]
+        [HttpGet]
+        public TaiKhoanModel GetDatabyID(string MaTaiKhoan)
         {
-            var user = _taiKhoanBusiness.Login(model.Username, model.Password);
-            if (user == null)
-                return BadRequest(new { message = "Tài khoản hoặc mật khẩu không đúng!" });
-            return Ok(new { taikhoan = user.TenTaiKhoan, token = user.token });
+            return _taiKhoanBusiness.GetDatabyID(MaTaiKhoan);
+        }
+
+        [Route("create-TaiKhoan")]
+        [HttpPost]
+        public TaiKhoanModel CreateItem([FromBody] TaiKhoanModel model)
+        {
+            _taiKhoanBusiness.Create(model);
+            return model;
+        }
+
+        [Route("update-TaiKhoan")]
+        [HttpPost]
+        public TaiKhoanModel UpdateItem([FromBody] TaiKhoanModel model)
+        {
+            _taiKhoanBusiness.Update(model);
+            return model;
+        }
+
+        [Route("Delete-TaiKhoan")]
+        [HttpDelete]
+        public IActionResult DeleteItem(string MaTaiKhoan)
+        {
+            _taiKhoanBusiness.Delete(MaTaiKhoan);
+            return Ok(new { message = "Xóa thành công!" });
         }
     }
-
 }

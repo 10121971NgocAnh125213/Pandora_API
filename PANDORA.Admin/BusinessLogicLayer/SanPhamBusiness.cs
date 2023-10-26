@@ -11,6 +11,18 @@ namespace BusinessLogicLayer
         {
             _res = res;
         }
+        public List<SanPhamModel> GetAll()
+        {
+            return _res.GetAll();
+        }
+        public SanPhamModel GetDatabyName(string name)
+        {
+            return _res.GetDatabyID(name);
+        }
+        public List<SPBanChayModel> GetbySpHot()
+        {
+            return _res.GetbySpHot();
+        }
         public SanPhamModel GetDatabyID(string id)
         {
             return _res.GetDatabyID(id);
@@ -23,9 +35,9 @@ namespace BusinessLogicLayer
         {
             return _res.Update(model);
         }
-        public bool Delete(SanPhamModel model)
+        public bool Delete(string MaSanPham)
         {
-            return _res.Delete(model);
+            return _res.Delete(MaSanPham);
         }
         public List<SanPhamModel> Search(int pageIndex, int pageSize, out long total, string ten_san_pham, string gia)
         {

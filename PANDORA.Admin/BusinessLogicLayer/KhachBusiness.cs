@@ -11,6 +11,10 @@ namespace BusinessLogicLayer
         {
             _res = res;
         }
+        public List<KhachModel> GetAll()
+        {
+            return _res.GetAll();
+        }
         public KhachModel GetDatabyID(string id)
         {
             return _res.GetDatabyID(id);
@@ -26,6 +30,10 @@ namespace BusinessLogicLayer
         public bool Delete(string MaKhachHang)
         {
             return _res.Delete(MaKhachHang);    
+        }
+        public List<KHMuaNhieuModel> TopKhachMuaHang()
+        {
+            return _res.TopKhachMuaHang();
         }
         public List<KhachModel> Search(int pageIndex, int pageSize, out long total, string ten_khach, string dia_chi)
         {

@@ -15,6 +15,45 @@ namespace Api.BanHang.Controllers
             _danhMucBusiness = danhMucBusiness;
         }
 
+        [Route("get-all")]
+        [HttpGet]
+        public List<DanhMucModel> GetAll()
+        {
+            return _danhMucBusiness.GetAll();
+        }
+
+        [Route("get-by-id/{MaDanhMuc}")]
+        [HttpGet]
+        public DanhMucModel GetDatabyID(string MaDanhMuc)
+        {
+            return _danhMucBusiness.GetDatabyID(MaDanhMuc);
+        }
+
+
+        [Route("create-DanhMuc")]
+        [HttpPost]
+        public DanhMucModel CreateItem([FromBody] DanhMucModel model)
+        {
+            _danhMucBusiness.Create(model);
+            return model;
+        }
+
+        [Route("update-DanhMuc")]
+        [HttpPut]
+        public DanhMucModel UpdateItem([FromBody] DanhMucModel model)
+        {
+            _danhMucBusiness.Update(model);
+            return model;
+        }
+
+        [Route("Delete-DanhMuc")]
+        [HttpDelete]
+        public IActionResult DeleteItem(string MaDanhMuc)
+        {
+            _danhMucBusiness.Delete(MaDanhMuc);
+            return Ok(new { message = "Xóa thành công!" });
+        }
+
         [Route("Search-DanhMuc")]
         [HttpPost]
         public IActionResult Search([FromBody] Dictionary<string, object> formData)

@@ -9,6 +9,23 @@ namespace DataAccessLayer
         {
             _dbHelper = dbHelper;
         }
+
+        public HoaDonModel GetDatabyID(string MaHoaDon)
+        {
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_hoadon_get_by_id",
+                     "@MaHoaDon", MaHoaDon);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<HoaDonModel>().FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public bool Create(HoaDonModel model)
         {
             string msgError = "";
@@ -59,13 +76,13 @@ namespace DataAccessLayer
                 throw ex;
             }
         }
-        public bool Delete(HoaDonModel model)
+        public bool Delete(string MaHoaDon)
         {
             string msgError = "";
             try
             {
                 var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "sp_hoadon_delete",
-                "@MaHoaDon", model.MaHoaDon);
+                "@MaHoaDon", MaHoaDon);
                 ;
                 if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))
                 {
@@ -78,7 +95,14 @@ namespace DataAccessLayer
                 throw ex;
             }
         }
-        public List<ThongKeKhachModel> Search(int pageIndex, int pageSize, out long total, string ten_khach_hang, DateTime? fr_NgayTao, DateTime? to_NgayDuyet)
+       
+        public List<ThongKeHoaDonModel> Search(
+            int pageIndex,
+            int pageSize,
+            out long total,
+            string TenKhachHang,
+            DateTime? fr_NgayTao,
+            DateTime? to_NgayDuyet)
         {
             string msgError = "";
             total = 0;
@@ -87,14 +111,15 @@ namespace DataAccessLayer
                 var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_thongke_hoadon",
                     "@page_index", pageIndex,
                     "@page_size", pageSize,
-                    "@ten_khach_hang", ten_khach_hang,
-                    "@fr_NgayTao", fr_NgayTao,
-                    "@to_NgayDuyet", to_NgayDuyet
+                    "@ten_khach_hang", TenKhachHang,
+                    "@fr_ngaytao", fr_NgayTao,
+                    "@to_ngayduyet", to_NgayDuyet
                      );
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);
                 if (dt.Rows.Count > 0) total = (long)dt.Rows[0]["RecordCount"];
-                return dt.ConvertTo<ThongKeKhachModel>().ToList();
+
+                return dt.ConvertTo<ThongKeHoaDonModel>().ToList();
             }
             catch (Exception ex)
             {

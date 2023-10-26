@@ -15,6 +15,13 @@ namespace Api.BanHang.Controllers
             _hoadonBusiness = hoadonBusiness;
         }
 
+        [Route("get-by-id/{MaHoaDon}")]
+        [HttpGet]
+        public HoaDonModel GetDatabyID(string MaHoaDon)
+        {
+            return _hoadonBusiness.GetDatabyID(MaHoaDon);
+        }
+
         [Route("create-hoadon")]
         [HttpPost]
         public HoaDonModel CreateItem([FromBody] HoaDonModel model)
@@ -31,13 +38,14 @@ namespace Api.BanHang.Controllers
             return model;
         }
 
-        [Route("Delete-HoaDon")]
+        [Route("Delete-hoadon")]
         [HttpDelete]
-        public HoaDonModel DeleteItem([FromBody] HoaDonModel model)
+        public IActionResult DeleteItem(string MaHoaDon)
         {
-            _hoadonBusiness.Delete(model);
-            return model;
+            _hoadonBusiness.Delete(MaHoaDon);
+            return Ok(new { message = "Xóa thành công!" });
         }
+
 
         [Route("search-HoaDon")]
         [HttpPost]
@@ -47,8 +55,9 @@ namespace Api.BanHang.Controllers
             {
                 var page = int.Parse(formData["page"].ToString());
                 var pageSize = int.Parse(formData["pageSize"].ToString());
+
                 string ten_khach_hang = "";
-                if (formData.Keys.Contains("ten_khach_hang") && !string.IsNullOrEmpty(Convert.ToString(formData["ten_khach"]))) { ten_khach_hang = Convert.ToString(formData["ten_khach_hang"]); }
+                if (formData.Keys.Contains("ten_khach_hang") && !string.IsNullOrEmpty(Convert.ToString(formData["ten_khach_hang"]))) { ten_khach_hang = Convert.ToString(formData["ten_khach_hang"]); }
                 DateTime? fr_NgayTao = null;
                 if (formData.Keys.Contains("fr_NgayTao") && formData["fr_NgayTao"] != null && formData["fr_NgayTao"].ToString() != "")
                 {
@@ -61,6 +70,7 @@ namespace Api.BanHang.Controllers
                     var dt = Convert.ToDateTime(formData["to_NgayDuyet"].ToString());
                     to_NgayDuyet = new DateTime(dt.Year, dt.Month, dt.Day, 23, 59, 59, 999);
                 }
+
                 long total = 0;
                 var data = _hoadonBusiness.Search(page, pageSize, out total, ten_khach_hang, fr_NgayTao, to_NgayDuyet);
                 return Ok(
@@ -78,5 +88,8 @@ namespace Api.BanHang.Controllers
                 throw new Exception(ex.Message);
             }
         }
+
+        
+    
     }
 }

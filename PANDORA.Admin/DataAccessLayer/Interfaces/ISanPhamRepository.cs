@@ -9,10 +9,13 @@ namespace DataAccessLayer
 {
     public partial interface ISanPhamRepository
     {
+        List<SanPhamModel> GetAll();
         SanPhamModel GetDatabyID(string id);
+        SanPhamModel GetDatabyName(string name);
+        List<SPBanChayModel> GetbySpHot();
         bool Create(SanPhamModel model);
         bool Update(SanPhamModel model);    
-        bool Delete(SanPhamModel model);
+        bool Delete(string MaSanPham);
         public List<SanPhamModel> Search(int pageIndex, int pageSize, out long total, string ten_san_pham, string gia);
     }
 }

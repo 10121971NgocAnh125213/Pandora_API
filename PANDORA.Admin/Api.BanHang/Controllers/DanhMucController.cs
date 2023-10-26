@@ -1,6 +1,6 @@
 ﻿using BusinessLogicLayer;
-using BusinessLogicLayer.Interfaces;
 using DataModel;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.BanHang.Controllers
@@ -13,6 +13,13 @@ namespace Api.BanHang.Controllers
         public DanhMucController(IDanhMucBusiness danhMucBusiness)
         {
             _danhMucBusiness = danhMucBusiness;
+        }
+
+        [Route("get-all")]
+        [HttpGet]
+        public List<DanhMucModel> GetAll()
+        {
+            return _danhMucBusiness.GetAll();
         }
 
         [Route("get-by-id/{MaDanhMuc}")]
@@ -41,10 +48,10 @@ namespace Api.BanHang.Controllers
 
         [Route("Delete-DanhMuc")]
         [HttpDelete]
-        public DanhMucModel DeleteItem([FromBody] DanhMucModel model)
+        public IActionResult DeleteItem(string MaDanhMuc)
         {
-            _danhMucBusiness.Delete(model);
-            return model;
+            _danhMucBusiness.Delete(MaDanhMuc);
+            return Ok(new { message = "Xóa thành công!" });
         }
 
         [Route("Search-DanhMuc")]

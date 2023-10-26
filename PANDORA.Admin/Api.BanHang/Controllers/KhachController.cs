@@ -15,6 +15,14 @@ namespace Api.BanHang.Controllers
             _khachBusiness = khachBusiness;
         }
 
+
+        [Route("get-all")]
+        [HttpGet]
+        public List<KhachModel> GetAll()
+        {
+            return _khachBusiness.GetAll();
+        }
+
         [Route("get-by-id/{MaKhachHang}")]
         [HttpGet]
         public KhachModel GetDatabyID(string MaKhachHang)
@@ -80,6 +88,12 @@ namespace Api.BanHang.Controllers
             {
                 throw new Exception(ex.Message);
             } 
+        }
+        [Route("get-TopKhachMuaNhieu")]
+        [HttpGet]
+        public List<KHMuaNhieuModel> TopKhachMuaHang()
+        {
+            return _khachBusiness.TopKhachMuaHang();
         }
     }
 }

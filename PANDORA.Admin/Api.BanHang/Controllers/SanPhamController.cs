@@ -15,11 +15,32 @@ namespace Api.BanHang.Controllers
             _sanPhamBusiness = sanPhamBusiness;
         }
 
+        [Route("get-all")]
+        [HttpGet]
+        public List<SanPhamModel> GetAll()
+        {
+            return _sanPhamBusiness.GetAll();
+        }
+
         [Route("get-by-id/{MaSanPham}")]
         [HttpGet]
         public SanPhamModel GetDatabyID(string MaSanPham)
         {
             return _sanPhamBusiness.GetDatabyID(MaSanPham);
+        }
+
+        [Route("get-BestSeller")]
+        [HttpGet]
+        public List<SPBanChayModel> GetbySpHot()
+        {
+            return _sanPhamBusiness.GetbySpHot();
+        }
+
+        [Route("get-by-name/{TenSanPham}")]
+        [HttpPost]
+        public SanPhamModel GetDatabyName(string TenSanPham)
+        {
+            return _sanPhamBusiness.GetDatabyName(TenSanPham);
         }
 
         [Route("create-SanPham")]
@@ -40,10 +61,10 @@ namespace Api.BanHang.Controllers
 
         [Route("delete-SanPham")]
         [HttpDelete]
-        public SanPhamModel DeleteItem([FromBody] SanPhamModel model)
+        public IActionResult DeleteItem(string MaSanPham)
         {
-            _sanPhamBusiness.Delete(model);
-            return model;
+            _sanPhamBusiness.Delete(MaSanPham);
+            return Ok(new { message = "Xóa thành công!" });
         }
 
         [Route("Search-SanPham")]

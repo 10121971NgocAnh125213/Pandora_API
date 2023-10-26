@@ -1,10 +1,4 @@
-﻿using DataAccessLayer.Interfaces;
-using DataModel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataModel;
 
 namespace DataAccessLayer
 {
@@ -16,6 +10,21 @@ namespace DataAccessLayer
             _dbHelper = dbHelper;
         }
 
+        public List<DanhMucModel> GetAll()
+        {
+            string msgErrror = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgErrror, "sp_danhmuc_get_all");
+                if (!string.IsNullOrEmpty(msgErrror))
+                    throw new Exception(msgErrror);
+                return dt.ConvertTo<DanhMucModel>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public DanhMucModel GetDatabyID(string MaDanhMuc)
         {
             string msgError = "";
@@ -74,13 +83,13 @@ namespace DataAccessLayer
                 throw ex;
             }
         }
-        public bool Delete(DanhMucModel model)
+        public bool Delete(string MaDanhMuc)
         {
             string msgError = "";
             try
             {
                 var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "sp_danhmuc_delete",
-                "@MaDanhMuc", model.MaDanhMuc);
+                "@MaDanhMuc", MaDanhMuc);
                 ;
                 if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))
                 {

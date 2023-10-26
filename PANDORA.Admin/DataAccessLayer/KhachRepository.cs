@@ -9,6 +9,21 @@ namespace DataAccessLayer
         {
             _dbHelper = dbHelper;
         }
+        public List<KhachModel> GetAll()
+        {
+            string msgErrror = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgErrror, "sp_khach_get_all");
+                if (!string.IsNullOrEmpty(msgErrror))
+                    throw new Exception(msgErrror);
+                return dt.ConvertTo<KhachModel>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public KhachModel GetDatabyID(string MaKhachHang)
         {
             string msgError = "";
@@ -56,7 +71,7 @@ namespace DataAccessLayer
             {
                 var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(
                     out msgError,
-                    "sp_khach_update",
+                    "sp_khach_create",
                 "@makhachhang" ,model.MaKhachHang,
                 "@tenKhachHang", model.TenKhachHang,
                 "@gioiTinh", model.GioiTinh,
@@ -87,6 +102,21 @@ namespace DataAccessLayer
                     throw new Exception(Convert.ToString(result) + msgError);
                 }
                 return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<KHMuaNhieuModel> TopKhachMuaHang()
+        {
+            string msgErrror = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgErrror, "sp_TopKhachHang");
+                if (!string.IsNullOrEmpty(msgErrror))
+                    throw new Exception(msgErrror);
+                return dt.ConvertTo<KHMuaNhieuModel>().ToList();
             }
             catch (Exception ex)
             {

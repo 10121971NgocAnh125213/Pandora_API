@@ -1,12 +1,6 @@
-﻿using BusinessLogicLayer.Interfaces;
+﻿using BusinessLogicLayer;
 using DataAccessLayer;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using DataModel;
-using DataAccessLayer.Interfaces;
 
 namespace BusinessLogicLayer
 {
@@ -17,7 +11,10 @@ namespace BusinessLogicLayer
         {
             _res = res;
         }
-
+        public List<DanhMucModel> GetAll()
+        {
+            return _res.GetAll();
+        }
         public DanhMucModel GetDatabyID(string id)
         {
             return _res.GetDatabyID(id);
@@ -30,9 +27,9 @@ namespace BusinessLogicLayer
         {
             return _res.Update(model);
         }
-        public bool Delete(DanhMucModel model)
+        public bool Delete(string MaDanhMuc)
         {
-            return _res.Delete(model);
+            return _res.Delete(MaDanhMuc);
         }
         public List<DanhMucModel> Search(int pageIndex, int pageSize, out long total, string danh_muc_cha, string ten_danh_muc)
         {
