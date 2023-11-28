@@ -10,7 +10,6 @@ namespace BusinessLogicLayer
     public partial interface ISanPhamBusiness
     {
         List<SanPhamModel> GetAll();
-        SanPhamModel GetDatabyName(string name);
         SanPhamModel GetDatabyID(string id);
         List<SPBanChayModel> GetbySpHot();
         bool Create (SanPhamModel model);    

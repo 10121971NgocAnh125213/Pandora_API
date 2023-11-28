@@ -36,13 +36,6 @@ namespace Api.BanHang.Controllers
             return _sanPhamBusiness.GetbySpHot();
         }
 
-        [Route("get-by-name/{TenSanPham}")]
-        [HttpPost]
-        public SanPhamModel GetDatabyName(string TenSanPham)
-        {
-            return _sanPhamBusiness.GetDatabyName(TenSanPham);
-        }
-
         [Route("create-SanPham")]
         [HttpPost]
         public SanPhamModel CreateItem([FromBody] SanPhamModel model)

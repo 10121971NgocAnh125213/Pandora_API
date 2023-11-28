@@ -9,7 +9,6 @@ namespace BusinessLogicLayer
 {
     public partial interface ITaiKhoanBusiness
     {
-        TaiKhoanModel GetDatabyID(string id);
         bool Create(TaiKhoanModel model);
         bool Update(TaiKhoanModel model);
         bool Delete(string MaTaiKhoan);

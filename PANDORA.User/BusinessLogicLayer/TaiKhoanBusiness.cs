@@ -11,10 +11,7 @@ namespace BusinessLogicLayer
         {
             _res = res;
         }
-        public TaiKhoanModel GetDatabyID(string id)
-        {
-            return _res.GetDatabyID(id);
-        }
+        
         public bool Create(TaiKhoanModel model)
         {
             return _res.Create(model);

@@ -15,10 +15,6 @@ namespace BusinessLogicLayer
         {
             return _res.GetAll();
         }
-        public SanPhamModel GetDatabyName(string name)
-        {
-            return _res.GetDatabyID(name);
-        }
         public List<SPBanChayModel> GetbySpHot()
         {
             return _res.GetbySpHot();

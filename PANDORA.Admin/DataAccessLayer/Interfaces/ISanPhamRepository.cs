@@ -11,7 +11,6 @@ namespace DataAccessLayer
     {
         List<SanPhamModel> GetAll();
         SanPhamModel GetDatabyID(string id);
-        SanPhamModel GetDatabyName(string name);
         List<SPBanChayModel> GetbySpHot();
         bool Create(SanPhamModel model);
         bool Update(SanPhamModel model);    

@@ -16,12 +16,7 @@ namespace Api.BanHang.Controllers
             _taiKhoanBusiness = taiKhoanBusiness;
         }
 
-        [Route("get-by-id/{MaTaiKhoan}")]
-        [HttpGet]
-        public TaiKhoanModel GetDatabyID(string MaTaiKhoan)
-        {
-            return _taiKhoanBusiness.GetDatabyID(MaTaiKhoan);
-        }
+        
 
         [Route("create-TaiKhoan")]
         [HttpPost]

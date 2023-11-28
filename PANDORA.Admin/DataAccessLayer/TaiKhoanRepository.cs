@@ -16,7 +16,7 @@ namespace DataAccessLayer
             try
             {
                 var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_taikhoan_get_by_id",
-                     "@mataikhoann", MaTaiKhoan);
+                     "@mataikhoan", MaTaiKhoan);
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);
                 return dt.ConvertTo<TaiKhoanModel>().FirstOrDefault();

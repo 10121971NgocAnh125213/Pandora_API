@@ -32,7 +32,7 @@ namespace Api.BanHang.Controllers
         }
 
         [Route("update-TaiKhoan")]
-        [HttpPost]
+        [HttpPut]
         public TaiKhoanModel UpdateItem([FromBody] TaiKhoanModel model)
         {
             _taiKhoanBusiness.Update(model);

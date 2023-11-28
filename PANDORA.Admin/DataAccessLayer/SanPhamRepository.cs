@@ -40,22 +40,6 @@ namespace DataAccessLayer
                 throw ex;
             }
         }
-        public SanPhamModel GetDatabyName(string TenSanPham)
-        {
-            string msgError = "";
-            try
-            {
-                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "sp_spham_get_by_name_admin",
-                     "@tensanpham", TenSanPham);
-                if (!string.IsNullOrEmpty(msgError))
-                    throw new Exception(msgError);
-                return dt.ConvertTo<SanPhamModel>().FirstOrDefault();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
         public List<SPBanChayModel> GetbySpHot()
         {
             string msgErrror = "";

@@ -23,7 +23,8 @@ namespace Api.BanHang.Controllers
             var user = _userBusiness.Login(model.TenTaiKhoan, model.MatKhau);
             if (user == null)
                 return BadRequest(new { message = "Tài khoản hoặc mật khẩu không đúng!" });
-            return Ok(new { taikhoan = user.TenTaiKhoan, token = user.token });
+            return Ok(new { message = "Đăng nhập thành công", taikhoan = user.TenTaiKhoan, token = user.token });
+
         }
     }
 }

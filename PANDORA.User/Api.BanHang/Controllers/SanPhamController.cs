@@ -43,29 +43,7 @@ namespace Api.BanHang.Controllers
             return _sanPhamBusiness.GetDatabyName(TenSanPham);
         }
 
-        [Route("create-SanPham")]
-        [HttpPost]
-        public SanPhamModel CreateItem([FromBody] SanPhamModel model)
-        {
-            _sanPhamBusiness.Create(model);
-            return model;
-        }
-
-        [Route("update-SanPham")]
-        [HttpPut]
-        public SanPhamModel UpdateItem([FromBody] SanPhamModel model)
-        {
-            _sanPhamBusiness.Update(model);
-            return model;
-        }
-
-        [Route("delete-SanPham")]
-        [HttpDelete]
-        public IActionResult DeleteItem(string MaSanPham)
-        {
-            _sanPhamBusiness.Delete(MaSanPham);
-            return Ok(new { message = "Xóa thành công!" });
-        }
+       
 
         [Route("Search-SanPham")]
         [HttpPost]

@@ -30,29 +30,8 @@ namespace Api.BanHang.Controllers
         }
 
 
-        [Route("create-DanhMuc")]
-        [HttpPost]
-        public DanhMucModel CreateItem([FromBody] DanhMucModel model)
-        {
-            _danhMucBusiness.Create(model);
-            return model;
-        }
 
-        [Route("update-DanhMuc")]
-        [HttpPut]
-        public DanhMucModel UpdateItem([FromBody] DanhMucModel model)
-        {
-            _danhMucBusiness.Update(model);
-            return model;
-        }
-
-        [Route("Delete-DanhMuc")]
-        [HttpDelete]
-        public IActionResult DeleteItem(string MaDanhMuc)
-        {
-            _danhMucBusiness.Delete(MaDanhMuc);
-            return Ok(new { message = "Xóa thành công!" });
-        }
+        
 
         [Route("Search-DanhMuc")]
         [HttpPost]
