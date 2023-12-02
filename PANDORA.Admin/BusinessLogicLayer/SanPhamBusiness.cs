@@ -23,7 +23,7 @@ namespace BusinessLogicLayer
         {
             return _res.GetDatabyID(id);
         }
-        public bool Create(SanPhamModel model)
+        public bool Create(SanPhamModelAL model)
         {
             return _res.Create(model);
         }

@@ -9,6 +9,7 @@ namespace BusinessLogicLayer
 {
     public partial interface ITaiKhoanBusiness
     {
+        List<TaiKhoanModel> GetAll();
         TaiKhoanModel GetDatabyID(string id);
         bool Create(TaiKhoanModel model);
         bool Update(TaiKhoanModel model);

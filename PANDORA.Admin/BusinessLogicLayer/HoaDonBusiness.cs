@@ -11,6 +11,10 @@ namespace BusinessLogicLayer
         {
             _res = res;
         }
+        public List<HoaDonModel> GetAll()
+        {
+            return _res.GetAll();
+        }
         public HoaDonModel GetDatabyID(string id)
         {
             return _res.GetDatabyID(id);

@@ -38,7 +38,7 @@ namespace Api.BanHang.Controllers
 
         [Route("create-SanPham")]
         [HttpPost]
-        public SanPhamModel CreateItem([FromBody] SanPhamModel model)
+        public SanPhamModelAL CreateItem([FromBody] SanPhamModelAL model)
         {
             _sanPhamBusiness.Create(model);
             return model;
@@ -60,8 +60,8 @@ namespace Api.BanHang.Controllers
             return Ok(new { message = "Xóa thành công!" });
         }
 
-        [Route("Search-SanPham")]
-        [HttpPost]
+        [Route("Search-SanPham")]  //xác định đường dẫn cho điểm cuối API
+        [HttpPost]  //điểm cuối API chỉ chấp nhận yêu cầu HTTP POST.
         public IActionResult Search([FromBody] Dictionary<string, object> formData)
         {
             try

@@ -9,7 +9,22 @@ namespace DataAccessLayer
         {
             _dbHelper = dbHelper;
         }
-        
+
+        public List<TaiKhoanModel> GetAll()
+        {
+            string msgErrror = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgErrror, "sp_taikhoan_get_all");
+                if (!string.IsNullOrEmpty(msgErrror))
+                    throw new Exception(msgErrror);
+                return dt.ConvertTo<TaiKhoanModel>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public TaiKhoanModel GetDatabyID(string MaTaiKhoan)
         {
             string msgError = "";
@@ -55,7 +70,8 @@ namespace DataAccessLayer
             {
                 var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(
                    out msgError,
-                   "sp_taikhoan_create",
+                   "sp_taikhoan_update",
+               "@mataikhoan", model.MaTaiKhoan,
                "@loaitaikhoan", model.LoaiTaiKhoan,
                "@tentaikhoan", model.TenTaiKhoan,
                "@matkhau", model.MatKhau);

@@ -13,6 +13,7 @@ namespace DataModel
             public string MauSac { get; set; }
             public float Gia { get; set; }
             public string SoLuongDaBan{ get; set; }
+            public string AnhSP { get; set; }
 
         }
 
@@ -20,9 +21,9 @@ namespace DataModel
         {
             public int MaKhachHang { get; set; }
             public string? TenKhachHang { get; set; }
-            public string? Sđt { get; set; }
+            public string? Sdt { get; set; }
             public string? DiaChi { get; set; }
-            public string? SoLuongSanPhamĐaMua { get; set; }
+            public string? SoLuongSanPhamDaMua { get; set; }
         }
 }
 

@@ -9,7 +9,21 @@ namespace DataAccessLayer
         {
             _dbHelper = dbHelper;
         }
-
+        public List<HoaDonModel> GetAll()
+        {
+            string msgErrror = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgErrror, "sp_hoadon_get_all");
+                if (!string.IsNullOrEmpty(msgErrror))
+                    throw new Exception(msgErrror);
+                return dt.ConvertTo<HoaDonModel>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public HoaDonModel GetDatabyID(string MaHoaDon)
         {
             string msgError = "";
@@ -57,7 +71,8 @@ namespace DataAccessLayer
             try
             {
                 var xxx = model.list_json_chitiethoadon != null ? MessageConvert.SerializeObject(model.list_json_chitiethoadon) : null;
-                var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "sp_hoadon_create",
+                var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "sp_hoa_don_update",
+                "@MaHoaDon", model.MaHoaDon,
                 "@TenKH", model.TenKhachHang,
                 "@Sđt", model.Sđt,
                 "@Diachi", model.DiaChiGiaoHang,

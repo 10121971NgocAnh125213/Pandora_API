@@ -11,13 +11,13 @@ namespace DataAccessLayer
         }
         public List<SanPhamModel> GetAll()
         {
-            string msgErrror = "";
+            string msgErrror = "";  
             try
             {
                 var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgErrror, "sp_spham_get_all");
-                if (!string.IsNullOrEmpty(msgErrror))
+                if (!string.IsNullOrEmpty(msgErrror)) 
                     throw new Exception(msgErrror);
-                return dt.ConvertTo<SanPhamModel>().ToList();
+                return dt.ConvertTo<SanPhamModel>().ToList();  
             }
             catch (Exception ex)
             {
@@ -42,11 +42,11 @@ namespace DataAccessLayer
         }
         public List<SPBanChayModel> GetbySpHot()
         {
-            string msgErrror = "";
+            string msgErrror = ""; //khởi tạo để lưu trữ thông báo lỗi
             try
             {
                 var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgErrror, "sp_get_spham_hot");
-                if (!string.IsNullOrEmpty(msgErrror))
+                if (!string.IsNullOrEmpty(msgErrror)) 
                     throw new Exception(msgErrror);
                 return dt.ConvertTo<SPBanChayModel>().ToList();
             }
@@ -55,7 +55,7 @@ namespace DataAccessLayer
                 throw ex;
             }
         }
-        public bool Create(SanPhamModel model)
+        public bool Create(SanPhamModelAL model)
         {
             string msgError = "";
             try
@@ -86,7 +86,8 @@ namespace DataAccessLayer
             {
                 var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(
                     out msgError,
-                    "sp_spham_create",
+                    "sp_spham_update",
+               "@maSanPham", model.MaSanPham,
                "@madanhmuc", model.MaDanhMuc,
                "@tensanpham", model.TenSanPham,
                "@gia", model.Gia,
@@ -135,7 +136,7 @@ namespace DataAccessLayer
                     "@gia", Gia);
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);
-                if (dt.Rows.Count > 0) total = (long)dt.Rows[0]["RecordCount"];
+                if (dt.Rows.Count > 0) total = (long)dt.Rows[0]["RecordCount"]; //kiểm tra xem bảng dữ liệu dt có ít nhất một dòng hay không
                 return dt.ConvertTo<SanPhamModel>().ToList();
             }
             catch (Exception ex)

@@ -11,6 +11,10 @@ namespace BusinessLogicLayer
         {
             _res = res;
         }
+        public List<TaiKhoanModel> GetAll()
+        {
+            return _res.GetAll();
+        }
         public TaiKhoanModel GetDatabyID(string id)
         {
             return _res.GetDatabyID(id);

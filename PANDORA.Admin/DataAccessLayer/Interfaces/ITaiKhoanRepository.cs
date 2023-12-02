@@ -9,6 +9,7 @@ namespace DataAccessLayer
 {
     public partial interface ITaiKhoanRepository
     {
+        List<TaiKhoanModel> GetAll();
         TaiKhoanModel GetDatabyID(string id);
         bool Create(TaiKhoanModel model);
         bool Update(TaiKhoanModel model);

@@ -69,7 +69,8 @@ namespace DataAccessLayer
             {
                 var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(
                     out msgError,
-                    "sp_danhmuc_create",
+                    "sp_danhmuc_update",
+               "@MaDanhMuc", model.MaDanhMuc,
                "@DanhMucCha", model.DanhMucCha,
                "@TenDanhMuc", model.TenDanhMuc);
                 if ((result != null && !string.IsNullOrEmpty(result.ToString())) || !string.IsNullOrEmpty(msgError))
